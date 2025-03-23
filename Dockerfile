@@ -12,6 +12,6 @@ COPY package*.json ./
 
 RUN npm i -g @angular/cli@19.1.5  --save-dev
 
-#RUN npm install
+RUN npm install
 
 COPY . .
