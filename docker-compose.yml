@@ -1,0 +1,10 @@
+services:
+  ui:
+    build:
+      context: .
+    ports:
+      - '4200:4200'
+    volumes:
+      - .:/barber-shop-ui
+    command: ng serve --host 0.0.0.0
+    stdin_open: true
